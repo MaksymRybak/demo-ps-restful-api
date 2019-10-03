@@ -26,6 +26,26 @@
 			"response": []
 		},
 		{
+			"name": "GET sites Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GET site",
 			"request": {
 				"method": "GET",
@@ -514,6 +534,32 @@
 						"api",
 						"data",
 						"dumpchanges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sites v1.0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?v=1.0",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "1.0"
+						}
 					]
 				}
 			},
