@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "8c59f30c-e0b5-4bf5-968f-8bbb29623447",
+		"name": "DemoRESTWebAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET sites",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET site",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST site error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites/1457",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1457"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST site bad request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Pergamon and its Multi-Layered Cultural Landscape\",\n    \"yearInscribed\": 2014,\n    \"url\": \"https://whc.unesco.org/en/list/1457\",\n    \"imageUrl\": \"https://whc.unesco.org/uploads/sites/site_1457.jpg\",\n    \"descriptionMarkup\": \"<p>This site rises high above the Bakirçay Plain in Turkey’s Aegean region. The acropolis of Pergamon was the capital of the Hellenistic Attalid dynasty, a major centre of learning in the ancient world. Monumental temples, theatres, stoa or porticoes, gymnasium, altar and library were set into the sloping terrain surrounded by an extensive city wall. The rock-cut Kybele Sanctuary lies to the north-west on another hill visually linked to the acropolis. Later the city became capital of the Roman province of Asia known for its Asclepieion healing centre. The acropolis crowns a landscape containing burial mounds and remains of the Roman, Byzantine and Ottoman empires in and around the modern town of Bergama on the lower slopes.</p>\",\n    \"states\": \"Turkey\",\n    \"location\": {\n        \"name\": \"\",\n        \"longitude\": 27.18,\n        \"latitude\": 27.18\n    },\n    \"categoryName\": \"Cultural\",\n    \"regionName\": \"Europe and North America\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST site created",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Pergamon and its Multi-Layered Cultural Landscape\",\n    \"yearInscribed\": 2014,\n    \"url\": \"https://whc.unesco.org/en/list/1457\",\n    \"imageUrl\": \"https://whc.unesco.org/uploads/sites/site_1457.jpg\",\n    \"descriptionMarkup\": \"<p>This site rises high above the Bakirçay Plain in Turkey’s Aegean region. The acropolis of Pergamon was the capital of the Hellenistic Attalid dynasty, a major centre of learning in the ancient world. Monumental temples, theatres, stoa or porticoes, gymnasium, altar and library were set into the sloping terrain surrounded by an extensive city wall. The rock-cut Kybele Sanctuary lies to the north-west on another hill visually linked to the acropolis. Later the city became capital of the Roman province of Asia known for its Asclepieion healing centre. The acropolis crowns a landscape containing burial mounds and remains of the Roman, Byzantine and Ottoman empires in and around the modern town of Bergama on the lower slopes.</p>\",\n    \"states\": \"Turkey\",\n    \"location\": {\n        \"name\": \"My Location\",\n        \"longitude\": 27.18,\n        \"latitude\": 27.18\n    },\n    \"categoryName\": \"Cultural\",\n    \"regionName\": \"Europe and North America\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST site error",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1577,\r\n    \"name\": \"My new Name\",\r\n    \"yearInscribed\": 2014,\r\n    \"url\": \"https://whc.unesco.org/en/list/1457\",\r\n    \"imageUrl\": \"https://whc.unesco.org/uploads/sites/site_1457.jpg\",\r\n    \"descriptionMarkup\": \"<p>This site rises high above the Bakirçay Plain in Turkey’s Aegean region. The acropolis of Pergamon was the capital of the Hellenistic Attalid dynasty, a major centre of learning in the ancient world. Monumental temples, theatres, stoa or porticoes, gymnasium, altar and library were set into the sloping terrain surrounded by an extensive city wall. The rock-cut Kybele Sanctuary lies to the north-west on another hill visually linked to the acropolis. Later the city became capital of the Roman province of Asia known for its Asclepieion healing centre. The acropolis crowns a landscape containing burial mounds and remains of the Roman, Byzantine and Ottoman empires in and around the modern town of Bergama on the lower slopes.</p>\",\r\n    \"states\": \"Turkey\",\r\n    \"location\": {\r\n        \"name\": \"My Location\",\r\n        \"longitude\": 27.18,\r\n        \"latitude\": 27.18\r\n    },\r\n    \"categoryName\": \"Cultural\",\r\n    \"regionName\": \"Europe and North America\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST site error Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1577,\r\n    \"name\": \"My new Name\",\r\n    \"yearInscribed\": 2014,\r\n    \"url\": \"https://whc.unesco.org/en/list/1457\",\r\n    \"imageUrl\": \"https://whc.unesco.org/uploads/sites/site_1457.jpg\",\r\n    \"descriptionMarkup\": \"<p>This site rises high above the Bakirçay Plain in Turkey’s Aegean region. The acropolis of Pergamon was the capital of the Hellenistic Attalid dynasty, a major centre of learning in the ancient world. Monumental temples, theatres, stoa or porticoes, gymnasium, altar and library were set into the sloping terrain surrounded by an extensive city wall. The rock-cut Kybele Sanctuary lies to the north-west on another hill visually linked to the acropolis. Later the city became capital of the Roman province of Asia known for its Asclepieion healing centre. The acropolis crowns a landscape containing burial mounds and remains of the Roman, Byzantine and Ottoman empires in and around the modern town of Bergama on the lower slopes.</p>\",\r\n    \"states\": \"Turkey\",\r\n    \"location\": {\r\n        \"name\": \"My Location\",\r\n        \"longitude\": 27.18,\r\n        \"latitude\": 27.18\r\n    },\r\n    \"categoryName\": \"Cultural\",\r\n    \"regionName\": \"Europe and North America\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE site",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
