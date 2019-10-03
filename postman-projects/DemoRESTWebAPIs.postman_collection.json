@@ -47,6 +47,27 @@
 			"response": []
 		},
 		{
+			"name": "GET site Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "POST site error",
 			"request": {
 				"method": "POST",
@@ -246,6 +267,253 @@
 						"api",
 						"sites",
 						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sites useWrapper=true",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?useWrapper=true",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "useWrapper",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sites paging",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?page=4",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sites paging without headers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?page=4&useHeaders=false",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "4"
+						},
+						{
+							"key": "useHeaders",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET site in JSON",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET site in XML",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sites of Africa's region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/regions/africa/sites",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"regions",
+						"africa",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sites paging",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/sites?page=2&useHeaders=false&pageSize=2",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "useHeaders",
+							"value": "false"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET site cached ETag",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "If-None-Match",
+						"value": "\"9635DBEC22D6C615DE5AA4B1B222F7DB\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://arest.me/api/sites/1577",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"sites",
+						"1577"
+					],
+					"query": [
+						{
+							"key": "If-None-Match",
+							"value": "\"9635DBEC22D6C615DE5AA4B1B222F7DB\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET site functional API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arest.me/api/data/dumpchanges",
+					"protocol": "http",
+					"host": [
+						"arest",
+						"me"
+					],
+					"path": [
+						"api",
+						"data",
+						"dumpchanges"
 					]
 				}
 			},
